@@ -8,7 +8,6 @@
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 h1, h2, h3 {
-	/*font-family: 'Yanone Kaffeesatz';*/
 	font-weight: 400;
 	margin-bottom: 0;
 }
@@ -51,28 +50,7 @@ code {
 #slideshow .slide .content pre code {
 	font-size: 0.9em;
 	padding: 15px;
-
 }
-
-code {
-	background: none repeat scroll 0 0 #F8F8FF;
-  border: 1px solid #DEDEDE;
-  border-radius: 3px 	;
-  padding: 0 0.2em;
-}
-pre {
-	border-left: 5px solid #eee;
-	margin-left: 2em;
-	padding-left: 1em;
-}
-pre > code {
-	background: transparent;
-	border: none;
-	padding: 0;
-}
-
-
-
 .main-title, .title {
 	background: #272822;
 	color: #777872;
@@ -82,22 +60,12 @@ pre > code {
 	color: #f3f3f3;
 	line-height: 0.8em;
 }
+/* Custom */
+.remark-code {
+	display: block;
+	padding: 0.5em;
+}
 
-/* Two-column layout */
-.left-column {
-	color: #777;
-	width: 20%;
-	height: 92%;
-	float: left;
-}
-.left-column h2:last-of-type, .left-column h3:last-child {
-	color: #000;
-}
-.right-column {
-	width: 75%;
-	float: right;
-	padding-top: 1em;
-}
 		</style>
 	</head>
 	<body>
@@ -105,43 +73,49 @@ pre > code {
 class: center, middle, main-title
 
 # Hello World!
+
 ---
 class: center, middle, title
 
 ## First slide
+
 ---
 class: center, middle, title
 
 ## Second slide
+
 ---
 ### Slide 2.1
 Text
 
 Text
 
+
 ---
 ### Slide 2.2
 Text
+
 
 ---
 class: center, middle, title
 
 ## Third slide
+
 ---
 ### Slide 3.1
 Text
 
+
 ---
 ### Slide 3.2
 Text
+
 
 ---
 ## Fourth slide, with list
 
 - a
  - a1
-
-
 - b
 - c
 
@@ -152,9 +126,16 @@ Second list
 - B
 - C
 
+
 ---
 ## Fifth slide
 This slide has a paragraph
+
+And:
+
+```
+one line code
+```
 
 ---
 class: center, middle, title

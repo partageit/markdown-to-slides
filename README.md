@@ -41,6 +41,7 @@ Each slide must be separated with '---'. Take a look at the [remark wiki](https:
 Sometimes, when you write a document with markdown, you may want to transform it as slides, even if it was not the aim.
 
 An obvious document structure is:
+
 ```markdown
 # Main document title
 
@@ -110,11 +111,16 @@ markdown-to-slides is very inspired from [markdown-html](https://github.com/frag
 
 ## Todo
 
-- better tables handling
-- better sub list handling
-- validate that md exists
+- validate that md file exists
 - store remark locally, or directly in the generated HTML document
 - split big slides
-- handle foot notes from additional file
+- handle foot notes (from additional file?)
+
+## Changelog
+
+Version 1.0.1:
+
+- One line code CSS enhanced
+- marked-to-md used: tables and list are now correctly handled
 
 ## [License](LICENSE)

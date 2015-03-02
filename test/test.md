@@ -39,4 +39,8 @@ Second list
 
 This slide has a paragraph
 
+And:
+
+    one line code
+
 ## The last slide

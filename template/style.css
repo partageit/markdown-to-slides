@@ -45,24 +45,6 @@ code {
 	font-size: 0.9em;
 	padding: 15px;
 }
-
-code {
-	background: none repeat scroll 0 0 #F8F8FF;
-  border: 1px solid #DEDEDE;
-  border-radius: 3px 	;
-  padding: 0 0.2em;
-}
-pre {
-	border-left: 5px solid #eee;
-	margin-left: 1em;
-	padding-left: 1em;
-}
-pre > code {
-	background: transparent;
-	border: none;
-	padding: 0;
-}
-
 .main-title, .title {
 	background: #272822;
 	color: #777872;
@@ -71,4 +53,9 @@ pre > code {
 .title h1, .title h2, .main-title h1, .main-title h2 {
 	color: #f3f3f3;
 	line-height: 0.8em;
+}
+/* Custom */
+.remark-code {
+	display: block;
+	padding: 0.5em;
 }
