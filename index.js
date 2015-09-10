@@ -9,7 +9,6 @@ var optimist = require('optimist')
 	'j': 'script',
 	'h': 'help',
 	'o': 'output-file',
-//	'i': 'stdin',
 	'w': 'watch',
 	'v': 'version',
 	'd': 'document-mode'
@@ -22,23 +21,22 @@ var optimist = require('optimist')
 	'help': 'This screen',
 	'output-file': 'Path to output file (stdout if not specified)',
 	'document-mode': 'Generate slides from a document without slide separators (---) or annotations',
-//	'stdin': 'If set, stdin will be used instead of file',
-	'watch': 'Watch mode'
+	'watch': 'Watch mode',
+	'level': 'Heading level to use as new slides (for example 3 is ###)'
 })
 .boolean('watch')
 .boolean('document-mode')
 .boolean('version')
 .default({
 	'style': path.resolve(templateDir + '/style.css'),
-	'template': path.resolve(templateDir + '/template.html')
+	'template': path.resolve(templateDir + '/template.html'),
+	'level': 3
 });
 var argv = optimist.argv;
 if (argv.v) {
 	console.log(require('./lib/version-string')());
 } else if (argv.h) {
 	console.log(require('./lib/help')(optimist));
-//} else if (argv.i) {
-//	require('./lib/stdio')(argv);
 } else if (argv.w) {
 	require('./lib/watch')(argv);
 } else {

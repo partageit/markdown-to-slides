@@ -43,4 +43,22 @@ And:
 
     one line code
 
+## Sixth slide
+
+### Slide 6.1
+
+Some content
+
+### Slide 6.2
+
+Other content
+
+#### 6.2.1
+
+This should be a new slide with --level 4
+
+#### 6.2.2
+
+Idem
+
 ## The last slide

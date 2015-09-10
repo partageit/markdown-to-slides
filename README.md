@@ -66,11 +66,13 @@ Usually, remark needs slides to be separated with `---`.
 
 This is where the document mode comes: enable the `--document-mode flag` (or `-d`), and slides are splitted automatically, based on the heading structure.
 
-With the previous exmple:
+With the previous example:
 
 - the document title (`#`) is decorated as the main title
 - chapter titles of the second level (`##`) without direct content (here: the 'First chapter') are on their own slides
 - sub chapter titles (`###`) have their own slide.
+
+Headings with level 4 (`####`) or above can be splitted on new slides thanks to the `--level` parameter.
 
 This is not as extensible as the remark syntax, with slides properties (e.g. `class: middle` or `name:`), but it prevent from thinking to the slideshow when writing a document.
 
@@ -103,11 +105,22 @@ The same, enabling the document mode.
 --output-file, -o    Path to output file (stdout if not specified)
 --document-mode, -d  Generate slides from a document without slide separators (---) or annotations
 --watch, -w          Watch mode
+--level              Heading level to use as new slides (for example 3 is ###)
 ```
 
-## Note
+## Notes
+
+### Inspiration
 
 markdown-to-slides is very inspired from [markdown-html](https://github.com/fragphace/markdown-html/), it is a great tool to convert markdown to HTML.
+
+### Related project
+
+[Vegetables](http://partageit.github.io/vegetables/) is a static Web site generator, turning Markdown documents into HTML pages.
+
+It can produce many versions of the same document, especially a slideshow version, using remark.
+
+In other words, it is like markdown-to-slides, but for many documents at once, with a serve mode, a menu to navigate between documents and auto reload when a document is updated.
 
 ## Todo
 
@@ -118,7 +131,12 @@ markdown-to-slides is very inspired from [markdown-html](https://github.com/frag
 
 ## Changelog
 
-Version 1.0.1:
+### Version 1.0.2
+
+- It is possible to choose the heading level (default was 3, i.e. `###`) to split slides (#2)
+- write() deprecation message removed, migrating mustache renderer from mu2 to mustache (#3)
+
+### Version 1.0.1
 
 - One line code CSS enhanced
 - marked-to-md used: tables and list are now correctly handled
