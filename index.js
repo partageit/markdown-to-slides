@@ -2,6 +2,7 @@
 var path = require('path');
 var templateDir = __dirname + '/template';
 var optimist = require('optimist')
+.usage('Usage: $0 file.md')
 .alias({
 	't': 'title',
 	'l': 'template',
@@ -11,7 +12,8 @@ var optimist = require('optimist')
 	'o': 'output-file',
 	'w': 'watch',
 	'v': 'version',
-	'd': 'document-mode'
+	'd': 'document-mode',
+	'i': 'include-remark'
 })
 .describe({
 	'title': 'Generated page title',
@@ -22,11 +24,13 @@ var optimist = require('optimist')
 	'output-file': 'Path to output file (stdout if not specified)',
 	'document-mode': 'Generate slides from a document without slide separators (---) or annotations',
 	'watch': 'Watch mode',
-	'level': 'Heading level to use as new slides (for example 3 is ###)'
+	'level': 'Heading level to use as new slides (for example 3 is ###)',
+	'include-remark': 'Include Remark sources (around 850kB) into the generated document'
 })
 .boolean('watch')
 .boolean('document-mode')
 .boolean('version')
+.boolean('include-remark')
 .default({
 	'style': path.resolve(templateDir + '/style.css'),
 	'template': path.resolve(templateDir + '/template.html'),

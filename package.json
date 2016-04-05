@@ -1,6 +1,6 @@
 {
 	"name": "markdown-to-slides",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "Transform a markdown file to an HTML slideshow, using remark",
 	"main": "index.js",
 	"scripts": {

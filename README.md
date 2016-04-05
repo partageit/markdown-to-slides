@@ -106,6 +106,7 @@ The same, enabling the document mode.
 --document-mode, -d  Generate slides from a document without slide separators (---) or annotations
 --watch, -w          Watch mode
 --level              Heading level to use as new slides (for example 3 is ###)
+--include-remark -i  Include Remark sources (around 850kB) into the generated document
 ```
 
 ## Notes
@@ -125,11 +126,15 @@ In other words, it is like markdown-to-slides, but for many documents at once, w
 ## Todo
 
 - validate that md file exists
-- store remark locally, or directly in the generated HTML document
 - split big slides
 - handle foot notes (from additional file?)
 
 ## Changelog
+
+### Version 1.0.3
+
+- Include remark script statically in compiled HTML. Thank you [Matt Kantor](https://github.com/mkantor)
+- As the generated file grows (around takes 850kB) when including the remark script, this enhancement must be enabled with the `--include-remark` parameter
 
 ### Version 1.0.2
 
