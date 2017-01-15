@@ -131,6 +131,10 @@ In other words, it is like markdown-to-slides, but for many documents at once, w
 
 ## Changelog
 
+### Version 1.0.5
+
+- `index.js` changed to `LF` instead of `CRLF` to prevent from `env: node\r: No such file or directory` on mac os X (#12 and #13).
+
 ### Version 1.0.4
 
 - Remark source protocol changed from HTTP to HTTPS thanks to [Kotaro Yoshimatsu](https://github.com/ktrysmt)

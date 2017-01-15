@@ -36,6 +36,7 @@ var optimist = require('optimist')
 	'template': path.resolve(templateDir + '/template.html'),
 	'level': 3
 });
+
 var argv = optimist.argv;
 if (argv.v) {
 	console.log(require('./lib/version-string')());
