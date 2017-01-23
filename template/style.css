@@ -12,7 +12,7 @@ h1, h2, h3 {
 	position: absolute;
 	bottom: 3em;
 }
-li p { line-height: 1.25em; }
+li { line-height: 1.25em; }
 .red { color: #fa0000; }
 .large { font-size: 2em; }
 a, a > code {
